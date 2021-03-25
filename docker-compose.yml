@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  mock-server:
+    build: ./app
+    container_name: mock-server
+    volumes:
+      - ./app:/app
+    ports:
+      - 4000:80
